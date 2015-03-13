@@ -1,0 +1,184 @@
+@mixin categorie($categorie, $classname, $color, $color-soft, $color-very-soft ) {
+
+
+    .megamenu{
+        #{$classname}
+        {
+            .button{
+                p{
+                    color:$color !important;
+                }
+            }
+        }
+    }
+
+    #{$classname}
+    {
+        &.active .button, &:hover .button{
+            p{
+                color:$color !important;
+            }
+        }
+
+        .wrapper-circle{
+            .circle{
+                background:$color;
+            }
+            .border{
+                border-color:$color;
+            }
+        }
+
+        .container-color{
+            background:$color;
+        }
+        .presentation{
+            background:$color;
+            border:1px solid $color;
+            .mark{
+                p{
+                    color:$color;
+                }
+            }
+        }
+        .grid{
+            li{
+                h3{
+                    color:$color-soft;
+                    b{
+                        color:$color;
+                    }
+                }
+                p{
+                    b{
+                        color:$color;
+                    }
+                }
+                .more{
+                    background-color:$color-soft;
+                }
+                &.box-100{
+                    background-image: image-url($categorie + "_arrow.png");
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &.wrapper-popin{
+            .popin-mark{
+                p{
+                    color:$color;
+                }
+            }
+            h3{
+                color:$color-soft;
+            }
+            h4{
+                color:$color;
+            }
+            p{
+                b{
+                    color:$color;
+                }
+                &.guillemets{
+                    &.guillemets{
+                        background-image: image-url($categorie + "_guille.png");
+                    }
+                    span{
+                        @include use-sprite($categorie + _guille2);
+                        display: inline-block;
+                    }
+                    &:after{
+                        color:#A060AE;
+                    }
+                }
+            }
+            ul{
+                li{
+                    span{
+                        color:$color;
+                    }
+                    b{
+                        color:$color;
+                    }
+                }
+                &.background{
+                    background-color:$color-very-soft;
+                }
+            }
+            .wrapper-slider{
+                h5{
+                    color:$color-soft;
+                }
+            }
+            .wrapper-img{
+                img{
+                    border:1px solid $color;
+                }
+            }
+        }
+    }
+}
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }    
+}
+
+@mixin hidetxt{
+    text-indent:-10000px;
+    overflow:hidden;
+}
+
+@mixin position ($position: relative, $coordinates: 0 0 0 0, $fullsize:false) {
+
+  @if type-of($position) == list {
+        $coordinates: $position;
+        $position: relative;
+    }
+    @if($fullsize == true){
+        width:100%;
+        height:100%;
+    }
+    $top: nth($coordinates, 1);
+    $right: nth($coordinates, 2);
+    $bottom: nth($coordinates, 3);
+    $left: nth($coordinates, 4);
+
+    position: $position;
+
+    @if $top == auto {
+        top: $top;
+    }
+    @else if not(unitless($top)) {
+        top: $top;
+    }
+
+    @if $right == auto {
+        right: $right;
+    }
+    @else if not(unitless($right)) {
+        right: $right;
+    }
+
+    @if $bottom == auto {
+        bottom: $bottom;
+    }
+    @else if not(unitless($bottom)) {
+        bottom: $bottom;
+    }
+
+    @if $left == auto {
+        left: $left;
+    }
+    @else if not(unitless($left)) {
+        left: $left;
+    }
+}

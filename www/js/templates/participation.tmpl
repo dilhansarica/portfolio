@@ -1,0 +1,83 @@
+<div class="participation-wrapper">
+    <div class="participation-content ">
+        <div class="participation-content-wrapper scroll-pane">
+            <div class="clearfix">
+
+
+                <p class="title">
+                    Remplissez maintenant le formulaire pour valider votre participation.<br/>
+                    Si vous avez la bonne réponse, <span class="orange">vous participerez au tirage au sort.</span>
+                </p>
+                <p class="msg-sent orange">
+                    Merci, votre participation a bien été prise en compte.
+                </p>
+
+                <form action="participation_submit" method="post" id="participation_form">
+                    <p class="msg-error">
+                        Certains champs du formulaire sont incomplets ou manquants. <br/>
+                        Vérifiez bien, ce serait dommage de perdre le fil maintenant. 
+                    </p>
+                    <div class="clearfix">
+                        <div class="left">
+                            <div class="field">
+                                <label>Nom *</label>
+                                <input type="text" name="lastname" value="" placeholder="" class="require" tabindex="1">
+                            </div>
+                            <div class="field">
+                                <label>Adresse e-mail *</label>
+                                <input type="text" name="email" value="" placeholder="" class="require" tabindex="3">
+                            </div>
+                            <div class="field birthday">
+                                <label>Date de naissance *</label>
+                                <div class="styleSelect">
+                                    <select id="birthDate" name="birthDate" tabindex="5">
+                                    </select>
+                                </div>
+                                <div class="styleSelect">
+                                    <select id="birthMonth" name="birthMonth" tabindex="6">
+                                    </select>
+                                </div>
+                                <div class="styleSelect">
+                                    <select id="birthYear" name="birthYear" tabindex="7">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="field">
+                                <label>Prénom *</label>
+                                <input type="text" name="firstname" value="" placeholder="" class="require" tabindex="2">
+                            </div>
+                            <div class="field">
+                                <label>Numéro de téléphone</label>
+                                <input type="text" name="phone" value="" placeholder="" tabindex="4">
+                            </div>
+                        </div>
+                    </div>
+<!--                     <div class="field legal clearfix">
+                        <input type="checkbox" name="condition" id="condition" value="">
+                        <label for="condition">J'accepte le reglement</label>
+                    </div> -->
+                    <div class="field legal clearfix">
+                        <input type="checkbox" name="emailing" id="emailing" value="">
+                        <label for="emailing">J'accepte de recevoir des informations de la part d'Orange</label>
+                    </div>
+
+                    <div class="field captcha">
+                        <div id="captcha_here"></div>
+                    </div>
+                    <p class="mention">* champs obligatoires</p>
+                    <input type="hidden" id="form-answer" name="answer" value="answer1">
+                    <input type="hidden" id="form-movie" name="film" value="video1">
+
+                    <div class="field submit">
+                        <input type="submit" name="" value="Valider ma participation" class="button white">
+                    </div>
+                </form>
+                <p class="mention-footer">Les informations vous concernant sont traitées par Orange à des fins d’analyse. Conformément à la "Loi Informatique et Libertés" du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et d'opposition aux données vous concernant en écrivant à Orange Service Clients Gestion des données personnelles 33734 Bordeaux cedex 9 (indiquez vos nom, prénom, adresse, numéro de téléphone et joindre un justificatif d'identité)</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

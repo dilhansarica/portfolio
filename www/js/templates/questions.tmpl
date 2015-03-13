@@ -1,0 +1,61 @@
+
+
+<h2 class="orange">Bien joué !</h2>
+
+<p>
+    Vous avez réussi à regarder la vidéo jusqu'au bout en passant d'un écran à l'autre !
+</p>
+
+<p><%= question %></p>
+
+<!-- <ul>
+	<li data-answer="<%= rep1 %>"><%= rep1 %></li>
+	<li data-answer="<%= rep2 %>"><%= rep2 %></li>
+	<li data-answer="<%= rep3 %>"><%= rep3 %></li>
+</ul>
+ -->
+
+<ul class="wrapper-answers clearfix">
+    <li class="wrapper-answer" data-answer="<%= rep1 %>">
+      <div class="wrapper-spinner">
+        <div class="bg-left bg">
+            <span></span>
+        </div>
+        <div class="bg-right bg">
+            <span></span>
+        </div>
+        <div class="wrapper-text">
+            <p class="answer"><%= rep1 %></p>
+        </div>
+      </div>
+    </li>
+    <li class="wrapper-answer" data-answer="<%= rep2 %>">
+      <div class="wrapper-spinner">
+        <div class="bg-left bg">
+            <span></span>
+        </div>
+        <div class="bg-right bg">
+            <span></span>
+        </div>
+        <div class="wrapper-text">
+            <p class="answer"><%= rep2 %></p>
+        </div>
+      </div>
+    </li>
+    <li class="wrapper-answer" data-answer="<%= rep3 %>">
+      <div class="wrapper-spinner">
+        <div class="bg-left bg">
+            <span></span>
+        </div>
+        <div class="bg-right bg">
+            <span></span>
+        </div>
+        <div class="wrapper-text">
+            <p class="answer"><%= rep3 %></p>
+        </div>
+      </div>
+    </li>
+</ul>
+
+
+<button class="white">Valider ma réponse</button>

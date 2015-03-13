@@ -1,0 +1,38 @@
+{
+    "extraits": [
+        {
+            "name" : "marceau",
+            "poster" : "poster-tu-veux-ou-tu-veux-pas.jpg",
+            "instruction" : "Comptez bien le nombre de livres qui se trouvent <br>à la verticale derrière Patrick Bruel ",
+            "description": "Dans cet extrait, vous allez devoir compter le nombre de livres qui se trouvent à la verticale derrière Patrick Bruel.<br>Attention, certains vont tout faire pour vous en empêcher.",
+            "movieInfo" : "Tu veux ou tu veux pas disponible à l’achat <br>et en location sur la Vidéo à la demande. <br>© 2014 Warner Bros. Entertainment Inc.<br>Tous droits réservés.",
+            "question"   : "Avez-vous bien compté le nombre de livres qui se trouvent à la verticale derrière Patrick Bruel ?",
+            "rep1" : "10",
+            "rep2" : "20",
+            "rep3" : "30"
+        },
+        {
+            "name" : "house",
+            "poster" : "poster-house-of-cards.jpg",
+            "instruction" : "Comptez bien le nombre de personnes différentes<br>qui passent derrière la jeune femme",
+            "description": "Dans cet extrait, vous allez devoir compter le nombre de personnes différentes qui passent derrière la jeune femme.<br>Attention, certains vont tout faire pour vous en empêcher.",
+            "movieInfo" : "House of Cards S2 disponible en location sur la Vidéo<br> à la demande. Interdit aux moins de 10 ans.<br>© 2013 MRC II Distribution Company L.P. <br>All Rights Reserved.",
+            "question"   : "Avez-vous bien compté le nombre de personnes différentes qui passent derrière la jeune femme ?",
+            "rep1" : "2",
+            "rep2" : "5",
+            "rep3" : "10"
+        },
+        {
+            "name" : "tortues",
+            "poster" : "poster-ninja-turtles.jpg",
+            "instruction" : "Comptez bien le nombre<br>de coups donnés aux méchants",
+            "description": "Dans cet extrait, vous allez devoir compter le nombre de coups donnés aux méchants.<br>Attention, certains vont tout faire pour vous en empêcher.",
+            "movieInfo" : "Ninja Turtles disponible à l’achat et le 25 février 2015 en<br> location sur la Vidéo à la demande.<br>TM, ® & © 2014 Paramount Pictures. <br>Tous Droits Réservés.",
+            "question"   : "Avez-vous bien compté le nombre de coups donnés aux méchants ? ",
+            "rep1" : "5",
+            "rep2" : "11",
+            "rep3" : "16"
+        }
+    ]
+}
+

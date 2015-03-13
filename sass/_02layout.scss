@@ -1,0 +1,85 @@
+html, body 
+{
+    height: 100%; 
+}
+
+body
+{
+    font-family: 'frank-book', sans-serif; 
+    color: $color-txt;
+    font-size: 16px;
+    line-height: 1.4em;
+    background:$color-background; 
+}
+
+#wrapper 
+{
+    min-height: 100%; 
+    width:1024px;
+    margin: 0 auto;
+}
+
+.fixed{
+    #wrapper{
+        margin:85px auto 0;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color:inherit;
+    &:hover 
+    {
+        text-decoration: underline;
+    }
+}
+
+a img{
+    border: 0;
+}
+
+img{
+    max-width:100%;
+}
+
+strong{
+  font-weight:bold;
+}
+
+sup 
+{
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+hr 
+{
+    border:none;
+}
+
+em 
+{
+	font-style:italic;
+}
+
+@media screen and (max-width: 960px) {
+    #wrapper 
+    {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fixed{
+        #wrapper{
+            margin:0;
+        }
+    }
+}
+
