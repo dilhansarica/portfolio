@@ -33,23 +33,16 @@
 
 </head>
 <body class="">
-    <div class="orange-header"></div>
+    <header>
 
+    </header>
     <div id="main">
-        <div class="main-content">
 
-            <div class="center-content" id="app_center">
-            <p>hey</p>
-            </div>
-
-            <div class="app_footer">
-
-            </div>
-
-        </div>
 
     </div>
-    <div id='div_footer'></div>
+    <footer>
+
+    </footer>
 
     <script src="js/env-config.js"></script>
     <script>

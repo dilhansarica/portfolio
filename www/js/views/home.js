@@ -1,34 +1,28 @@
-define(
+ define(
     [
         'jquery',
         'underscore',
         'backbone',
-        'jqueryui',
         'app-config',
-        'text!../../templates/connect-lost.tmpl'
-    ], function($, _, Backbone, jUi, appConfig, tmpl) {
+        'text!../../templates/home.tmpl'
+    ], function($, _, Backbone, appConfig, tmpl) {
 
         'use strict';
 
-        var connectLostView = Backbone.View.extend({
+        var homeView = Backbone.View.extend({
             events: {
 
             },
-            id: "connect_lost",
-
+            id: "home",
             template : _.template(tmpl),
             initialize: function(){
-                console.log("connect_lost");
+                console.log("home");
             },
             render : function(){
-                $(".experience-content").append(this.$el);
+                $("#main").append(this.$el);
                 this.$el.html(this.template());
-
                 this.$el.hide();
-                this.$el.fadeIn();
-
-                appConfig.pageViewGstatTag('/erreur-video');
-
+                this.$el.fadeIn(300);
                 return this;
             },
             hide :  function(){
@@ -36,6 +30,6 @@ define(
             }
         });
 
-        return connectLostView;
+        return homeView;
     }
 )

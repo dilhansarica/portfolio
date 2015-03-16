@@ -5,8 +5,7 @@ define(
         'backbone',
         'app-config',
         'router/router',
-        'preloader',
-        'text!templates/example.tmpl' // pour appeler un template
+        'preloader'
     ], function($, _, Backbone, appConfig, Router, preload, tmpl) {
 
         'use strict';
