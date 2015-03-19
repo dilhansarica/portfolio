@@ -3,7 +3,7 @@
 <head>
     <title>Portfolio Dilhan</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
     <link rel="stylesheet" href="css/main.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -37,6 +37,7 @@
 
     </header>
     <div id="main">
+
 
 
     </div>

@@ -12,11 +12,9 @@ body
     background:$color-background;
 }
 
-#wrapper
+#main
 {
-    min-height: 100%;
-    width:1024px;
-    margin: 0 auto;
+    //position:relative;
 }
 
 .fixed{
@@ -69,17 +67,10 @@ em
 }
 
 @media screen and (max-width: 960px) {
-    #wrapper
-    {
-        width:100%;
-    }
+
 }
 
 @media screen and (max-width: 600px) {
-    .fixed{
-        #wrapper{
-            margin:0;
-        }
-    }
+
 }
 

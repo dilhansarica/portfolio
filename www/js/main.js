@@ -70,46 +70,7 @@ define(
 
             console.log(appConfig);
 
-            //JUST AN EXAMPLE, PLEASE USE YOUR OWN PICTURE!
-            var imageAddr = "/img/test-quality-image.jpg";
-            var downloadSize = 1251151; //bytes
 
-
-            window.setTimeout(MeasureConnectionSpeed, 1);
-
-            function MeasureConnectionSpeed() {
-                var startTime, endTime;
-                var download = new Image();
-                download.onload = function () {
-                    endTime = (new Date()).getTime();
-                    showResults();
-                }
-
-                download.onerror = function (err, msg) {
-                    console.log("Invalid image, or error downloading");
-                }
-
-                startTime = (new Date()).getTime();
-                var cacheBuster = "?nnn=" + startTime;
-                download.src = imageAddr + cacheBuster;
-
-                function showResults() {
-                    var duration = (endTime - startTime) / 1000;
-                    var bitsLoaded = downloadSize * 8;
-                    var speedBps = (bitsLoaded / duration);
-                    var speedKbps = (speedBps / 1024);
-                    var speedMbps = (speedKbps / 1024);
-                    console.log(speedMbps, duration);
-                    if(speedMbps > 10){
-                        appConfig.videoQuality = "hd";
-                    }else{
-                        appConfig.videoQuality = "ld";
-                    }
-                    if( appConfig.isMobile.any() ){
-                        appConfig.videoQuality = "ld";
-                    }
-                }
-            }
         });
     }
 );
