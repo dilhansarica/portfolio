@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" itemscope itemtype="http://schema.org/Event">
 <head>
-    <title>Portfolio Dilhan</title>
+    <title>Dilhan Sarica | Front End Web Developper</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
@@ -10,18 +10,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable:no;" />
-    <meta name="description" content="" />
-    <meta name="title" content="Portfolio Dilhan">
+    <meta name="description" content="Portfolio de Dilhan Sarica" />
+    <meta name="title" content="Dilhan Sarica | Front End Web Developper">
 
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Portfolio Dilhan" />
+    <meta property="og:title" content="Dilhan Sarica | Front End Web Developper" />
     <meta property="og:url" content="http://www.dilhansarica.com" />
     <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Portfolio de Dilhan Sarica" />
 
-    <meta itemprop="name" content="">
-    <meta itemprop="description" content="">
+    <meta itemprop="name" content="Dilhan Sarica | Front End Web Developper">
+    <meta itemprop="description" content="Portfolio de Dilhan Sarica">
     <meta itemprop="image" content="">
 
 
