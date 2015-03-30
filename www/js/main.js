@@ -38,7 +38,7 @@ define(
         var jsonCalls = []
 
         var myLoader = html5Preloader();
-        var files = ['img/extraits/poster-house-of-cards.jpg', 'img/extraits/poster-ninja-turtles.jpg', 'img/extraits/poster-tu-veux-ou-tu-veux-pas.jpg'];
+        var files = [];
         $.each(files, function(id, file){
             console.log(file)
             myLoader.addFiles(file);

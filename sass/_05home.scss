@@ -68,36 +68,49 @@ section>header { display: none }
     padding: 0 10px;
 }
 #hello article.introduction dl dd {
-    -webkit-transition-property: left, opacity;
-    -moz-transition-property: left, opacity;
-    -o-transition-property: left, opacity;
-    transition-property: left, opacity;
-    -webkit-transition-duration: 800ms, 100ms;
-    -moz-transition-duration: 800ms, 100ms;
-    -o-transition-duration: 800ms, 100ms;
-    transition-duration: 800ms, 100ms;
-    -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), cubic-bezier(0.23, 1, 0.32, 1);
-    -moz-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), cubic-bezier(0.23, 1, 0.32, 1);
-    -o-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), cubic-bezier(0.23, 1, 0.32, 1);
-    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), cubic-bezier(0.23, 1, 0.32, 1);
-    opacity: 0.0;
-    position: relative;
-    left: 100px;
-    background-color: #222222;
+    position:relative;
+
     display: inline-block;
-    padding: 0 10px;
+
     margin-left: -4px;
+
+    height: 28px;
+    width:200px;
 }
-#hello article.introduction dl dd ul { display: inline }
+#hello article.introduction dl dd ul {
+    display: inline;
+}
 #hello article.introduction dl dd ul li {
-    display: none;
     list-style: none;
-    color: $color-txt-blue;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top:0;
+    width:20px;
+    height: 40px;
+    display:inline-block;
+    background-color: #222222;
+    overflow: hidden;
+    z-index:1;
+    p{
+        padding: 0 10px;
+        color: $color-txt-blue;
+        width:200px;
+        opacity:0;
+    }
+    @include transition(width 1s $easeInOutCubic);
     &:first-child{
         display:inline-block;
     }
-
+    &.active{
+        z-index:2;
+        p{
+            @include transition(opacity 1s);
+            opacity:1;
+        }
+    }
 }
+
 #hello article.introduction dl dd ul li span.old {
     color: rgba(167, 240, 22, 0.4);
     margin-left: 5px;
